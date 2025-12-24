@@ -1,0 +1,31 @@
+{
+    "description": "bwm-xmd-connetor",
+    "main": "./bwmxmd.js",
+    "engines": {
+        "npm": ">=9.7.2",
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "start": "node bwmxmd.js"
+    },
+    "author": "Bwmxmdscanner",
+    "license": "GPL-3.0 license",
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.896.0",
+        "@bwmxmdtech/baileys": "npm:baileys@6.7.21",
+        "@fizzxydev/baileys-pro": "^8.7.1",
+        "@octokit/rest": "^22.0.0",
+        "@whiskeysockets/baileys": "npm:baileys@6.7.21",
+        "awesome-phonenumber": "^2.64.0",
+        "aws-sdk": "^2.1692.0",
+        "axios": "^1.13.0",
+        "body-parser": "^1.20.1",
+        "dotenv": "^17.2.3",
+        "express": "^4.18.1",
+        "pastebin-js": "^1.0.6",
+        "path": "^0.12.7",
+        "phone": "3.1.30",
+        "pino": "^8.1.0",
+        "qrcode": "^1.5.3"
+    }
+}
