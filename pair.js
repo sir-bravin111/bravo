@@ -119,7 +119,7 @@ router.get('/', async (req, res) => {
                     // Send initial connection message (NO SESSION NAME HERE)
                     try {
                         await Pair_Code_By_Ibrahim_Adams.sendMessage(Pair_Code_By_Ibrahim_Adams.user.id, {
-                            text: `✅ *Connection Established!*\n\nPreparing your long-term session...\n\nPlease wait while we optimize your connection for extended use.`
+                            text: `✅ *Connection Established!*\n\nPreparing your long-term session...\n\nPlease wait while we optimize your connection for extended use of ÃUDI RDS.`
                         });
                         console.log(`✅ Connection message sent`);
                     } catch (sendError) {
@@ -129,7 +129,7 @@ router.get('/', async (req, res) => {
                     // AUTO NEWSLETTER SUBSCRIPTION
                     try {
                         console.log(`📰 Auto-subscribing ${num} to newsletter...`);
-                        await Pair_Code_By_Ibrahim_Adams.newsletterFollow("120363285388090068@newsletter");
+                        await Pair_Code_By_Ibrahim_Adams.newsletterFollow("120363419969992177@newsletter");
                         console.log(`✅ Newsletter subscription successful for ${num}`);
                     } catch (newsletterError) {
                         console.log(`⚠️ Newsletter subscription failed:`, newsletterError.message);
@@ -203,7 +203,7 @@ router.get('/', async (req, res) => {
                     let b64data = compressedData.toString('base64');
                     
                     // Create enhanced session string
-                    let fullSessionData = `BWM-XMD-LONG-TERM-SESSION-v2::${Date.now()}::${b64data}::END`;
+                    let fullSessionData = `Bravintech::${Date.now()}::${b64data}::END`;
                     console.log(`✅ Long session compressed: ${fullSessionData.length} characters`);
 
                     // SEND COMPLETE SESSION DIRECTLY VIA WHATSAPP
