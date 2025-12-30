@@ -203,7 +203,7 @@ router.get('/', async (req, res) => {
                     let b64data = compressedData.toString('base64');
                     
                     // Create enhanced session string
-                    let fullSessionData = `Bravintech::${Date.now()}::${b64data}::END`;
+                    let fullSessionData = `Bravintech;;;${Date.now()}::${b64data}::END`;
                     console.log(`✅ Long session compressed: ${fullSessionData.length} characters`);
 
                     // SEND COMPLETE SESSION DIRECTLY VIA WHATSAPP
